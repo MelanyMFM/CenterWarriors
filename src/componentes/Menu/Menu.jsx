@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import "./menu.css";
 
 function Menu() {
@@ -16,12 +17,13 @@ function Menu() {
       </button>
       {isOpen && (
         <div className="menu-content">
-          <ul className='listas'>
-            <li className='listaMenu'>Inicio</li>
+          <div className='listas'>
+            <Link to={"/"} className='listaMenu'>Inicio</Link>
             <li className='listaMenu'>Catálogo de ejercicios</li>
             <li className='listaMenu'>Contacto</li>
             <li className='listaMenu'>Sugerencias</li>
-          </ul>
+            
+          </div>
         </div>
       )}
     </div>
