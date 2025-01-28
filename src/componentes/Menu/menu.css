@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 1.65rem;
+    color: #fff;
+
+  }
+  
+  
+  .menu-content {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .listaMenu{
+    background-color: #fff;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 9px;
+    font-weight:400;
+    width: 11.25rem;
+}
+
+  .todo{
+    background-color: #1E1E1E;
+    font-family: 'Inter', sans-serif;
+    
+    position: absolute;
+  }
+
+.listas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    list-style: none;
+    padding: .6rem;
+}
