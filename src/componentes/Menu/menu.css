@@ -3,8 +3,9 @@
 .menu-icon {
     background: none;
     border: none;
-    font-size: 1.65rem;
+    font-size: 2rem;
     color: #fff;
+    
 
   }
   
@@ -31,8 +32,9 @@
   .todo{
     background-color: #1E1E1E;
     font-family: 'Inter', sans-serif;
-    
+    margin-left: 1rem;
     position: absolute;
+    border-radius: 9px;
   }
 
 .listas{

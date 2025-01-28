@@ -2,6 +2,7 @@ import Menu from "../../componentes/Menu/Menu";
 import './home.css';
 import logo from "../../assets/logo.png";
 import {Link} from 'react-router-dom';
+import Contacto from "../../componentes/Contacto/Contacto";
 
 function Home() {
   return (
@@ -18,6 +19,8 @@ function Home() {
 
 
       </div>
+
+      <Contacto/>
     </div>
   );
 };
