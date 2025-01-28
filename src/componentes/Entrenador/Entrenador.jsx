@@ -12,8 +12,8 @@ function Entrenador({ nombre, instagram, img, facebook }) {
             </div>
 
             <div className="logos">
-                <a href={instagram}><img src={ig} alt="logo instagram"/></a>
-                <a href={facebook}><img src={face} alt="logo facebook"/></a>
+                <a href={instagram}><img src={ig} alt="logo instagram" className="imagenlogo"/></a>
+                <a href={facebook}><img src={face} alt="logo facebook" className="imagenlogo"/></a>
             </div>
         </div>
     );

@@ -25,7 +25,7 @@ function Entrenador() {
     return (
         <div style={{ paddingTop: "1rem", backgroundColor: "#000", height: "100%", paddingBottom: "33.75rem" }}>
             <Menu />
-            <div className="entrenador">
+            <div className="entrenadore">
                 <div className="headere">
                     <img src={logo} alt="logo" className="logoHead" />
                     <p className="titleEnt">Ingrese su código</p>
