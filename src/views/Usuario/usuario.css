@@ -5,25 +5,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .filtro-box {
     background: #d3d3d3;
     display: flex;
     flex-direction: column;
-    padding: .8rem;
+    gap: 2.25rem;
+    padding: 1.25rem;
     border-radius: 15px;
 }
 
 .btn-filtrar {
-    background: #FF00FF;
+    background: #5faab0;
     color: black;
-    font-size: 1rem;
-    padding: 0.8rem;
+    font-size: 1.5rem;
+    padding: 1.1rem;
     border: none;
     border-radius: 12px;
-    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
 }
 
 .lista-rutinas {
@@ -32,6 +36,7 @@
     margin-top: 1rem;
     border-radius: 12px;
     width: 80%;
+
 }
 
 .rutina-card {
@@ -39,11 +44,12 @@
     padding: 0.8rem;
     border-radius: 8px;
     margin-bottom: 0.5rem;
+
+    font-family: 'Inter', sans-serif;
 }
 
 
 .tituloFiltro{
-
     font-family: "Julius Sans One", sans-serif;
     font-size: 1.5rem;
 }
@@ -51,4 +57,20 @@
 .opciones{
     display: flex;
     flex-direction: column;
+    gap:1.125rem ;
+
+}
+
+.label{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+}
+
+.porfavorfunciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.25rem;
+
+    
 }

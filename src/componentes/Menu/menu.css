@@ -33,7 +33,9 @@
     background-color: #1E1E1E;
     font-family: 'Inter', sans-serif;
     margin-left: 1rem;
-    position: absolute;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
     border-radius: 9px;
   }
 

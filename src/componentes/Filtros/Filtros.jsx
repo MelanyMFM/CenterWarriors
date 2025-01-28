@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaSearch } from 'react-icons/fa'; 
 
 function Filtros({ onFiltrar }) {
     const [objetivo, setObjetivo] = useState("");
@@ -29,7 +30,7 @@ function Filtros({ onFiltrar }) {
                 
             </div>
 
-            <button className="btn-filtrar" onClick={handleFiltrar}>Filtrar rutina</button>
+            <button className="btn-filtrar" onClick={handleFiltrar}>Filtrar rutina <FaSearch /></button>
         </div>
     );
 }
