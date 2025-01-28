@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap');
+
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filtro-box {
+    background: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+    border-radius: 15px;
+}
+
+.btn-filtrar {
+    background: #FF00FF;
+    color: black;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.lista-rutinas {
+    background: #d3d3d3;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    width: 80%;
+}
+
+.rutina-card {
+    background: #808080;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+
+.tituloFiltro{
+
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+}
