@@ -3,6 +3,8 @@ import Home from "./views/Home/Home";
 import Usuario from './views/Usuario/Usuario';
 import Entrenador from './views/Entrenador/Entrenador';
 import Contacto from './componentes/Contacto/Contacto';
+import VistaEntre from './views/VistaEntre/VistaEntre';
+
 
 function App() {
     return (
@@ -11,6 +13,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/usuario" element={<Usuario/> }/>
                 <Route path="/entrenador" element={<Entrenador/> }/>
+                <Route path="/homeEntrenador" element={<VistaEntre />} />
 
                 <Route path="/contacto" element={<Contacto />} />
             </Routes>

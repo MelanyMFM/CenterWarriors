@@ -5,8 +5,9 @@
     padding: 2.188rem 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.125rem;
-    padding-bottom: 6rem;
+    gap: 1.8rem;
+    padding-bottom: 5rem;
+
     .tituloContact{
         font-family: 'Inter', sans-serif;
         color: #fff;
@@ -25,8 +26,14 @@
             text-decoration: none;
             color: #fff;
             font-family: 'Inter', sans-serif;
+
             .icon{
-                color: #DA22FF;
+                color: #5faab0;
+            }
+
+            a{
+                text-decoration: none;
+                color: #fff;
             }
         }
     }

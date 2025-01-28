@@ -5,13 +5,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+
     .foto-nombre{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         width: 9.5rem;
-        margin-left: -1.5rem;
+        margin-left: -1.9rem;
         
 
         .nombreEnt{

@@ -32,7 +32,7 @@ function Menu() {
           <div className='listas'>
             <Link to={"/"} className='listaMenu'>Inicio</Link>
             <li className='listaMenu'>Catálogo de ejercicios</li>
-            <Link to="/" className='listaMenu' onClick={handleContactoClick}>Contacto</Link>
+            <Link to={"/"} className='listaMenu' onClick={handleContactoClick}>Contacto</Link>
             <li className='listaMenu'>Sugerencias</li>
             
           </div>
