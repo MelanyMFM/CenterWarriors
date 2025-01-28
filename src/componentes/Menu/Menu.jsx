@@ -14,6 +14,7 @@ function Menu() {
 
   const handleContactoClick = (e) => {
     e.preventDefault(); // Evita la navegación predeterminada
+    setIsOpen(false); // Cierra el menú
     if (location.pathname !== '/') {
       navigate('/'); // Navega a la ruta principal
     }
@@ -35,9 +36,9 @@ function Menu() {
         <div className="menu-content">
           <div className='listas'>
             <Link to={"/"} className='listaMenu' onClick={() => setIsOpen(false)}>Inicio</Link>
-            <li className='listaMenu'>Catálogo de ejercicios</li>
+            <li className='listaMenu' onClick={() => setIsOpen(false)}>Catálogo de ejercicios</li>
             <Link to={"/"} className='listaMenu' onClick={handleContactoClick}>Contacto</Link>
-            <li className='listaMenu'>Sugerencias</li>
+            <li className='listaMenu' onClick={() => setIsOpen(false)}>Sugerencias</li>
           </div>
         </div>
       )}
