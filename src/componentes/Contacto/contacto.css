@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap');
+
 .contacto{
     background-color: #1D0060;
-    margin: 0;
+    padding: 2.188rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    padding-bottom: 6rem;
+    .tituloContact{
+        font-family: 'Inter', sans-serif;
+        color: #fff;
+        font-size: 1.5rem;
+    }
 
+    .infoContact{
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        .info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.625rem;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            .icon{
+                color: #DA22FF;
+            }
+        }
+    }
+
+    .logos{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+    }
+
+    .entrenadores{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+    }
 }
