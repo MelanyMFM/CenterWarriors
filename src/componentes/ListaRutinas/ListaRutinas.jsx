@@ -4,8 +4,8 @@ function ListaRutinas({ rutinas }) {
             {rutinas.length > 0 ? (
                 rutinas.map((rutina) => (
                     <div key={rutina.id} className="rutina-card">
-                        <p><strong>{rutina.nombre}</strong></p>
-                        <p>{rutina.entrenador}</p>
+                        <p className="tituloRutina">{rutina.nombre}</p>
+                        <p className="entrenadorRutina">{rutina.entrenador}</p>
                     </div>
                 ))
             ) : (

@@ -36,11 +36,25 @@
     margin-top: 1rem;
     border-radius: 12px;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.688rem;
+
+    font-family: 'Inter', sans-serif;
+
+    .tituloRutina{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .entrenadorRutina{
+        font-size: 1rem;
+    }
 
 }
 
 .rutina-card {
-    background: #808080;
+    background: #b2b2b2;
     padding: 0.8rem;
     border-radius: 8px;
     margin-bottom: 0.5rem;
@@ -66,11 +80,33 @@
     font-size: 1.25rem;
 }
 
-.porfavorfunciona{
+
+
+
+.usuCont{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5.25rem;
+    gap: 1.688rem;
 
-    
+    .logoHead{
+        width: 5rem;   
+    }
+
+    .porfavorfunciona{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5.25rem;
+   
+    }
+
+}
+
+.usuario-container{
+    background-color: #000;
+    width: 100%;
+    padding-top: 1rem;
+
+    padding-bottom: 10rem;
 }

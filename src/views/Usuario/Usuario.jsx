@@ -20,10 +20,14 @@ function Usuario() {
     return (
         <div className="usuario-container">
             <Menu />
-            <div className="porfavorfunciona">
-                <Filtros onFiltrar={filtrarRutinas} />
-                <ListaRutinas rutinas={rutinasFiltradas} />
+            <div className="usuCont">
+                <img alt="logo" src={logo} className="logoHead"/>
+                <div className="porfavorfunciona">              
+                    <Filtros onFiltrar={filtrarRutinas} />
+                    <ListaRutinas rutinas={rutinasFiltradas} />
+                </div>
             </div>
+            
         </div>
     );
 }
