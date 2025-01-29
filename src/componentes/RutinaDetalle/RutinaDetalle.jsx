@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import rutinas from '../../assets/rutinas.js'; // Importa las rutinas
+import "./rutinaDetalle.css";
+import Menu from "../Menu/Menu.jsx"
 
 function RutinaDetalle() {
     const { id } = useParams(); // Obtiene el ID de la URL
@@ -36,27 +38,31 @@ function RutinaDetalle() {
     }
 
     return (
+        <div >
+            <Menu/>
         <div className="rutina-detalle">
+            
             <h2>{rutina.nombre}</h2>
             <p>Entrenador: {rutina.entrenador}</p>
 
             {rutina.dias.map((dia, diaIndex) => (
                 <div key={diaIndex} className="dia-rutina">
                     <h3>{dia.dia}</h3>
-                    <ul>
+                    <div>
                         {dia.ejercicios.map((ejercicio, ejercicioIndex) => (
-                            <li key={ejercicioIndex}>
-                                <label>
+                            <p key={ejercicioIndex} >
+                                <label className='ejercicioRutina'>
+                                    {ejercicio}
                                     <input
                                         type="checkbox"
                                         checked={completados[`${diaIndex}-${ejercicioIndex}`] || false}
                                         onChange={() => toggleEjercicioCompletado(diaIndex, ejercicioIndex)}
                                     />
-                                    {ejercicio}
+                                    
                                 </label>
-                            </li>
+                            </p>
                         ))}
-                    </ul>
+                    </div>
                 </div>
             ))}
 
@@ -64,6 +70,7 @@ function RutinaDetalle() {
             <button onClick={reiniciarRutina} className="btn-reiniciar">
                 Reiniciar rutina 🔄
             </button>
+            </div>
         </div>
     );
 }
