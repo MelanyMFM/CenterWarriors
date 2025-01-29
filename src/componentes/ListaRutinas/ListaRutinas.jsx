@@ -1,6 +1,6 @@
 function ListaRutinas({ rutinas }) {
     return (
-        <div className="lista-rutinas">
+        <div className="lista-rutinas" >
             {rutinas.length > 0 ? (
                 rutinas.map((rutina) => (
                     <div key={rutina.id} className="rutina-card">
