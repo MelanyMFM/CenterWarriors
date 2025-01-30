@@ -48,7 +48,7 @@ function RutinaDetalle() {
             {rutina.dias.map((dia, diaIndex) => (
                 <div key={diaIndex} className="dia-rutina">
                     <h3>{dia.dia}</h3>
-                    <div>
+                    <div className='tablaEjercicios'>
                         {dia.ejercicios.map((ejercicio, ejercicioIndex) => (
                             <p key={ejercicioIndex} >
                                 <label className='ejercicioRutina'>
