@@ -2,24 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import rutinas from '../../assets/rutinas.js'; // Importa las rutinas
 import "./rutinaDetalle.css";
-import Menu from "../Menu/Menu.jsx"
+import Menu from "../Menu/Menu.jsx";
+import logo from "../../assets/logo.png";
 
 function RutinaDetalle() {
     const { id } = useParams(); // Obtiene el ID de la URL
     const rutina = rutinas.find(r => r.id === parseInt(id)); // Encuentra la rutina correspondiente
 
-    // Estado para los ejercicios completados, inicializado desde localStorage
     const [completados, setCompletados] = useState(() => {
         const saved = localStorage.getItem(`rutina-${id}-completados`);
         return saved ? JSON.parse(saved) : {};
     });
 
-    // Guardar cambios en localStorage cuando cambia el estado
     useEffect(() => {
         localStorage.setItem(`rutina-${id}-completados`, JSON.stringify(completados));
     }, [completados, id]);
 
-    // Alternar estado de completado de un ejercicio
     const toggleEjercicioCompletado = (diaIndex, ejercicioIndex) => {
         setCompletados(prev => {
             const key = `${diaIndex}-${ejercicioIndex}`;
@@ -27,10 +25,9 @@ function RutinaDetalle() {
         });
     };
 
-    // Reiniciar la rutina (desmarca todos los ejercicios)
     const reiniciarRutina = () => {
-        setCompletados({}); // Borra el estado de completados
-        localStorage.removeItem(`rutina-${id}-completados`); // Borra el localStorage
+        setCompletados({});
+        localStorage.removeItem(`rutina-${id}-completados`);
     };
 
     if (!rutina) {
@@ -38,38 +35,37 @@ function RutinaDetalle() {
     }
 
     return (
-        <div >
+        <div>
             <Menu/>
-        <div className="rutina-detalle">
-            
-            <h2>{rutina.nombre}</h2>
-            <p>Entrenador: {rutina.entrenador}</p>
+            <div className="rutina-detalle">
+                <img src={logo} alt="logo" className='logoHead'/>
+                <div className='rutina-detalle-contenido'>
+                    <h2 className='texto-titulo'>{rutina.nombre}</h2>
+                    <p>Entrenador: {rutina.entrenador}</p>
 
-            {rutina.dias.map((dia, diaIndex) => (
-                <div key={diaIndex} className="dia-rutina">
-                    <h3>{dia.dia}</h3>
-                    <div className='tablaEjercicios'>
-                        {dia.ejercicios.map((ejercicio, ejercicioIndex) => (
-                            <p key={ejercicioIndex} >
-                                <label className='ejercicioRutina'>
-                                    {ejercicio}
-                                    <input
-                                        type="checkbox"
-                                        checked={completados[`${diaIndex}-${ejercicioIndex}`] || false}
-                                        onChange={() => toggleEjercicioCompletado(diaIndex, ejercicioIndex)}
-                                    />
-                                    
-                                </label>
-                            </p>
-                        ))}
-                    </div>
+                    {rutina.dias.map((dia, diaIndex) => (
+                        <div key={diaIndex} className="dia-rutina">
+                            <h3 className='texto-titulo'>{dia.dia}</h3>
+                            <div className='tablaEjercicios texto-titulo'>
+                                {dia.ejercicios.map((ejercicio, ejercicioIndex) => (
+                                    <div key={ejercicioIndex} className="ejercicio-item">
+                                        <label className='ejercicioRutina'>
+                                            {ejercicio}
+                                            <div
+                                                className={`checkbox-circle ${completados[`${diaIndex}-${ejercicioIndex}`] ? 'checked' : ''}`}
+                                                onClick={() => toggleEjercicioCompletado(diaIndex, ejercicioIndex)}
+                                            ></div>
+                                        </label>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+
+                    <button onClick={reiniciarRutina} className="btn-reiniciar">
+                        Reiniciar rutina 🔄
+                    </button>
                 </div>
-            ))}
-
-            {/* Botón para reiniciar la rutina */}
-            <button onClick={reiniciarRutina} className="btn-reiniciar">
-                Reiniciar rutina 🔄
-            </button>
             </div>
         </div>
     );
