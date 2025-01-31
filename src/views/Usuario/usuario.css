@@ -66,6 +66,7 @@
 .tituloFiltro{
     font-family: "Julius Sans One", sans-serif;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .opciones{
@@ -115,3 +116,9 @@
     text-decoration: none;
     color:#000;
 }
+
+
+
+
+
+
