@@ -4,6 +4,11 @@ import instagram from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png";
 import Entrenador from "../Entrenador/Entrenador";
 
+import sebas from "../../assets/sebas.png";
+import faber from "../../assets/faber.png";
+import dani from "../../assets/dani.png";
+import juan from "../../assets/juan.png";
+
 function Contacto() {
     return (
         <div className='contacto' id="contacto">
@@ -31,10 +36,10 @@ function Contacto() {
 
             <p className='tituloContact'>Entrenadores</p>
             <div className='entrenadores'>
-                <Entrenador nombre="Sebastian Osorio" instagram="https://www.instagram.com/jsebasosorio07/" img="src\assets\sebas.png" />
-                <Entrenador nombre="Faber Pineda" instagram="https://www.instagram.com/faberpinedav/" img="src\assets\faber.png"/>
-                <Entrenador nombre="Daniel Rodriguez" instagram="https://www.instagram.com/danirodriguez_37/" img="src\assets\dani.png" />
-                <Entrenador nombre="Juan P Buitrago" instagram="https://www.instagram.com/juanpablo_thefit/" img="src\assets\juan.png" />
+                <Entrenador nombre="Sebastian Osorio" instagram="https://www.instagram.com/jsebasosorio07/" img={sebas} />
+                <Entrenador nombre="Faber Pineda" instagram="https://www.instagram.com/faberpinedav/" img={faber}/>
+                <Entrenador nombre="Daniel Rodriguez" instagram="https://www.instagram.com/danirodriguez_37/" img={dani} />
+                <Entrenador nombre="Juan P Buitrago" instagram="https://www.instagram.com/juanpablo_thefit/" img={juan} />
             </div>
         </div>
     );
