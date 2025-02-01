@@ -25,7 +25,8 @@
         }
 
         .fotoEnt{
-            width: 3.125rem;
+            width: 5.5rem;
+            border-radius: 100px;
         }
 
     }

@@ -31,7 +31,7 @@ function Entrenador() {
                     <p className="titleEnt">Ingrese su código</p>
                 </div>
                 <input 
-                    type="text" 
+                    type="password" 
                     className="codigo-input"
                     value={codigo}
                     onChange={(e) => setCodigo(e.target.value)}

@@ -3,7 +3,6 @@ import './contacto.css';
 import instagram from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png";
 import Entrenador from "../Entrenador/Entrenador";
-import img from "../../assets/Ellipse 1.png";
 
 function Contacto() {
     return (
@@ -16,11 +15,11 @@ function Contacto() {
                 </p>
                 <p className='info'>
                     <FaEnvelope className="icon" /> {/* Icono de correo */}
-                    <a href="mailto:softwareashen@gmail.com">softwareashen@gmail.com</a>
+                    <a href="mailto:mefrancom@unal.edu.co">mefrancom@unal.co</a>
                 </p>
                 <p className='info'>
                     <FaPhone className="icon" /> {/* Icono de teléfono */}
-                    <a href="tel:+57380652059">+57 380 652 059</a>
+                    <a href="tel:+57380652059">+57 380 652 059 (ni se de quien es xd)</a>
                 </p>
             </div>
 
@@ -32,10 +31,10 @@ function Contacto() {
 
             <p className='tituloContact'>Entrenadores</p>
             <div className='entrenadores'>
-                <Entrenador nombre="Entrenador 1" instagram="link ig" img={img} facebook="link face"/>
-                <Entrenador nombre="ise guiso" instagram="link ig" img={img} facebook="link face"/>
-                <Entrenador nombre="Honey" instagram="link ig" img={img} facebook="link face"/>
-                <Entrenador nombre="Melany ola" instagram="link ig" img={img} facebook="link face"/>
+                <Entrenador nombre="Sebastian Osorio" instagram="https://www.instagram.com/jsebasosorio07/" img="src\assets\sebas.png" />
+                <Entrenador nombre="Faber Pineda" instagram="https://www.instagram.com/faberpinedav/" img="src\assets\faber.png"/>
+                <Entrenador nombre="Daniel Rodriguez" instagram="https://www.instagram.com/danirodriguez_37/" img="src\assets\dani.png" />
+                <Entrenador nombre="Juan P Buitrago" instagram="https://www.instagram.com/juanpablo_thefit/" img="src\assets\juan.png" />
             </div>
         </div>
     );

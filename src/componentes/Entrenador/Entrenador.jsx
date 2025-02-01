@@ -13,7 +13,7 @@ function Entrenador({ nombre, instagram, img, facebook }) {
 
             <div className="logos">
                 <a href={instagram}><img src={ig} alt="logo instagram" className="imagenlogo"/></a>
-                <a href={facebook}><img src={face} alt="logo facebook" className="imagenlogo"/></a>
+                {facebook && <a href={facebook}><img src={face} alt="logo facebook" className="imagenlogo"/></a>}
             </div>
         </div>
     );
@@ -23,7 +23,7 @@ Entrenador.propTypes = {
     nombre: PropTypes.string.isRequired,
     instagram: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
-    facebook: PropTypes.string.isRequired,
+    facebook: PropTypes.string,
 };
 
 export default Entrenador;
