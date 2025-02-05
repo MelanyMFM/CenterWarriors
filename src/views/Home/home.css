@@ -3,6 +3,7 @@
 .elHome{
     background-color: #000;
     padding-top: 1rem;
+    margin: 0 auto;
 
     .home{
         display: flex;

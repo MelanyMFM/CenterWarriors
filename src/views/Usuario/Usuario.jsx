@@ -18,7 +18,7 @@ function Usuario() {
     };
 
     return (
-        <div className="usuario-container">
+        <div className="usuario-container vista">
             <Menu />
             <div className="usuCont">
                 <img alt="logo" src={logo} className="logoHead"/>

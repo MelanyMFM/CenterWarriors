@@ -37,7 +37,7 @@ function RutinaDetalle() {
     return (
         <div>
             <Menu/>
-            <div className="rutina-detalle">
+            <div className="rutina-detalle vista">
                 <img src={logo} alt="logo" className='logoHead'/>
                 <div className='rutina-detalle-contenido'>
                     <h2 className='texto-titulo'>{rutina.nombre}</h2>

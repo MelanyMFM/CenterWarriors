@@ -16,7 +16,7 @@ function VistaEntre() {
     return (
         <div className="todo-temp">
             <img src={perrito} alt="perrito" className="perrito"/>
-            <p>Sitio en Contrucción :c</p>
+            <p >Sitio en Contrucción :c</p>
         </div>
     );
 }

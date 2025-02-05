@@ -1,3 +1,16 @@
 *{
     margin: 0;
+    
+}
+
+/* Si hay problemas borrar lo de abajo*/
+
+.vista{
+    max-width: 770px;
+    margin: 0 auto;
+    
+}
+
+#root{
+    background-color: black;
 }

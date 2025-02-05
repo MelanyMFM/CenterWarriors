@@ -6,7 +6,7 @@ import Contacto from "../../componentes/Contacto/Contacto";
 
 function Home() {
   return (
-    <div className="elHome">
+    <div className="elHome vista">
       <Menu/>
       <div className="home"> 
         <img alt="logo"src={logo} className="logo"/>
