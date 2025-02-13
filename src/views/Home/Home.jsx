@@ -3,6 +3,7 @@ import './home.css';
 import logo from "../../assets/logo.png";
 import {Link} from 'react-router-dom';
 import Contacto from "../../componentes/Contacto/Contacto";
+import SendFeedback from "../../componentes/SendFeedback/SendFeedback";
 
 function Home() {
   return (
@@ -19,8 +20,8 @@ function Home() {
 
 
       </div>
-
       <Contacto/>
+      <SendFeedback/>
     </div>
   );
 };

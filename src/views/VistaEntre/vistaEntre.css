@@ -1,17 +1,3 @@
-.todo-temp {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    width: 100vw; /* Ocupa toda la anchura de la pantalla */
-    flex-direction: column;
-    font-size: 2rem;
-    gap:2rem;
+.temporal{
     background-color: white;
-}
-
-.perrito {
-
-    width: 25rem; /* Mantiene la proporción de la imagen */
-   
 }
