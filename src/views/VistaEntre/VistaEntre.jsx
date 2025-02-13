@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import FetchFeedback from "../../componentes/fetchFeedback/fetchFeedback";
+import FetchFeedback from "../../componentes/FetchFeedback/FetchFeedback";
 import "./vistaEntre.css";
 
 function VistaEntre() {
