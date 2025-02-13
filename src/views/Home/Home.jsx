@@ -3,7 +3,7 @@ import './home.css';
 import logo from "../../assets/logo.png";
 import {Link} from 'react-router-dom';
 import Contacto from "../../componentes/Contacto/Contacto";
-import SendFeedback  from "../../componentes/sendFeedback/sendFeedback"; //no tengo idea de que pasó aquí
+import SendFeedback from "../../componentes/SendFeedback/SendFeedback";
 
 function Home() {
   return (
