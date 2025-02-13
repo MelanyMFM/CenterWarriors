@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import perrito from "../../assets/perrito.jpg";
+import FetchFeedback from "../../componentes/fetchFeedback/fetchFeedback";
 import "./vistaEntre.css";
 
 function VistaEntre() {
@@ -14,9 +14,8 @@ function VistaEntre() {
     }, [navigate]);
 
     return (
-        <div className="todo-temp">
-            <img src={perrito} alt="perrito" className="perrito"/>
-            <p >Sitio en Contrucción :c</p>
+        <div className="temporal">
+            <FetchFeedback/>
         </div>
     );
 }
