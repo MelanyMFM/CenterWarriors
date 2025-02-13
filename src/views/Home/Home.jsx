@@ -3,6 +3,9 @@ import './home.css';
 import logo from "../../assets/logo.png";
 import {Link} from 'react-router-dom';
 import Contacto from "../../componentes/Contacto/Contacto";
+import SendFeedback from "../../componentes/sendFeedback/sendFeedback";
+import FetchFeedback from "../../componentes/fetchFeedback/fetchFeedback";
+
 
 function Home() {
   return (
@@ -19,7 +22,8 @@ function Home() {
 
 
       </div>
-
+      <SendFeedback/>
+      <FetchFeedback/>
       <Contacto/>
     </div>
   );
