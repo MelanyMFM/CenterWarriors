@@ -1,0 +1,1 @@
+export const API_URL = "https://app-97e46832-1294-461e-ac25-30e1414d9ccf.cleverapps.io/"; // Reemplaza con la URL de tu backend

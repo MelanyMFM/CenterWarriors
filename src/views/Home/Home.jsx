@@ -5,6 +5,13 @@ import {Link} from 'react-router-dom';
 import Contacto from "../../componentes/Contacto/Contacto";
 
 function Home() {
+
+  const obtener = () => {
+          axios.get(`${API_URL}/api/`)
+              .then(response => setRutinas(response.data))
+              .catch(error => console.error(error));
+      };
+      console.log(obtener);
   return (
     <div className="elHome vista">
       <Menu/>

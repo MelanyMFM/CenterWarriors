@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import perrito from "../../assets/perrito.jpg";
+
 import "./vistaEntre.css";
+import PanelEntrenador from "../../componentes/EntrenadorPanel/EntrenadorPanel";
 
 function VistaEntre() {
     const navigate = useNavigate();
@@ -15,8 +16,7 @@ function VistaEntre() {
 
     return (
         <div className="todo-temp">
-            <img src={perrito} alt="perrito" className="perrito"/>
-            <p >Sitio en Contrucción :c</p>
+            <PanelEntrenador/>
         </div>
     );
 }
