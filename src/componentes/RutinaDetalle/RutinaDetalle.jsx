@@ -59,7 +59,7 @@ function RutinaDetalle() {
                                     return (
                                         <div key={ejercicioIndex} className="ejercicio-item">
                                             <label className='ejercicioRutina' onClick={() => handleEjercicioClick(ejercicio.ejercicioId)}>
-                                                {ejercicioInfo ? ejercicioInfo.nombre : "Ejercicio no encontrado"} - {ejercicio.reps}
+                                                <span>{ejercicioInfo ? ejercicioInfo.nombre : "Ejercicio no encontrado"}</span>  <span className='reps'>{ejercicio.reps}</span>
                                                 <div
                                                     className={`checkbox-circle ${completados[`${diaIndex}-${ejercicioIndex}`] ? 'checked' : ''}`}
                                                     onClick={(e) => {

@@ -49,7 +49,7 @@ const rutinas = [
             }
         ]
     },
-    // Continuar con el resto de las rutinas...
+    
 ];
 
 export default rutinas;
