@@ -1,22 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap');
 
 .form-retroalimentacion{
-    padding-bottom: 5rem;
+    padding:3rem 1rem;
     color: #fff;
     font-family: 'Inter', sans-serif;
+
     .form-retroalimentacion-titulo{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 600;
     }
 
     .form-retroalimentacion-subtitulo{
+        font-size: 1.5rem;
+    }
+
+    .formulario{
+        display:flex;
+        flex-direction: column;
         font-size: 1rem;
+
+        .area-texto{
+            resize: none;
+            border: none;
+            outline: none;
+            border-radius: 16px;
+        }
+
+
     }
 
-    .area-texto{
-        resize: none;
-        border: none;
-        outline: none;
-
-    }
+    
 }

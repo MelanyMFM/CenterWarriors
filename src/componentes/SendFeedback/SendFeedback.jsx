@@ -25,7 +25,7 @@ const SendFeedback = () => {
 
   return (
     <div className="form-retroalimentacion">
-      <p className="c">¿Tienes sugerencias para ayudarnos a mejorar?</p>
+      <p className="form-retroalimentacion-titulo">¿Tienes sugerencias para ayudarnos a mejorar?</p>
       <p className="form-retroalimentacion-subtitulo">No dudes en llenar este buzón de sugerencias</p>
 
     <form onSubmit={handleSubmit}>
@@ -38,7 +38,7 @@ const SendFeedback = () => {
       <button type="submit">Enviar</button>
     </form>
 
-    <form>
+    <form className="formulario">
       <textarea
         placeholder="Escribe tu retroalimentación aquí..."
         required
