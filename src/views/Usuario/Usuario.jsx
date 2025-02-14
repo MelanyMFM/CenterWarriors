@@ -2,7 +2,7 @@ import { useState } from "react";
 import Menu from "../../componentes/Menu/Menu";
 import Filtros from "../../componentes/Filtros/Filtros.jsx";
 import ListaRutinas from "../../componentes/ListaRutinas/ListaRutinas.jsx";
-import rutinas from "../../assets/rutinas.js";
+import rutinas from "../../assets/rutinas.js"; // Asegúrate de que esta importación sea correcta rutinas
 import "./usuario.css";
 import logo from "../../assets/logo.png";
 
@@ -27,7 +27,6 @@ function Usuario() {
                     <ListaRutinas rutinas={rutinasFiltradas} />
                 </div>
             </div>
-            
         </div>
     );
 }
