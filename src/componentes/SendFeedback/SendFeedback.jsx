@@ -25,7 +25,9 @@ const SendFeedback = () => {
 
   return (
     <div className="form-retroalimentacion">
-      <p className="sdsd">Solo funciona la de arriba</p>
+      <p className="c">¿Tienes sugerencias para ayudarnos a mejorar?</p>
+      <p className="form-retroalimentacion-subtitulo">No dudes en llenar este buzón de sugerencias</p>
+
     <form onSubmit={handleSubmit}>
       <textarea
         value={feedback}
@@ -40,6 +42,7 @@ const SendFeedback = () => {
       <textarea
         placeholder="Escribe tu retroalimentación aquí..."
         required
+        className="area-texto"
       />
       <button >Enviar</button>
     </form>
