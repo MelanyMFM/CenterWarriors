@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { db } from "../../firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-
+import "./sendFeedback.css";
 
 const SendFeedback = () => {
   const [feedback, setFeedback] = useState("");
@@ -24,7 +24,9 @@ const SendFeedback = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-retroalimentacion">
+    <div className="form-retroalimentacion">
+      <p className="sdsd">Solo funciona la de arriba</p>
+    <form onSubmit={handleSubmit}>
       <textarea
         value={feedback}
         onChange={(e) => setFeedback(e.target.value)}
@@ -33,6 +35,16 @@ const SendFeedback = () => {
       />
       <button type="submit">Enviar</button>
     </form>
+
+    <form>
+      <textarea
+        placeholder="Escribe tu retroalimentación aquí..."
+        required
+      />
+      <button >Enviar</button>
+    </form>
+</div>
+
   );
 };
 
