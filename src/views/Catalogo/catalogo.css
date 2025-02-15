@@ -1,74 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap');
 
-.catalogo{
+.catalogo {
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
     font-family: 'Inter', sans-serif;
     padding-top: 1rem;
-
-    .logoHead{
-        width: 5rem;
-    }
-
-    .catalogo-contenido{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap:1.3rem;
-
-        .texto-titulo-cat{
-            font-size: 1.8rem;
-            font-weight: 400;
-        }
-        
-        .grupo-muscular{
-            
-            .grupo-titulo{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-radius: 9px;
-                padding: .5rem;
-                width: 100%;
-
-                .nombre-grupo{
-                    font-size: 1.6rem;
-                    font-weight: 500;
-                }
-
-                .triangulo{
-                    font-size: 1rem;
-                    
-                }
-            }
-
-            .lista-ejercicios{
-                background-color: #D3D3D3;
-                border-radius: 9px;
-                display: flex;
-                flex-direction: column;
-                padding: .3rem 0;
-
-                .ejercicio-item{
-
-                    display: flex;
-                    align-items:baseline;
-                    padding: 0;
-
-                    .nombre-ejercicio{
-                        font-size: 1.45rem;
-                        border: none;
-                        background: none;
-                        padding: .8rem 1.5rem;
-                    
-                    }
-                }
-
-                
-            }
-        }
-    }
 }
+
+.catalogo .logoHead {
+    width: 5rem;
+}
+
+.catalogo .catalogo-contenido {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.catalogo .texto-titulo-cat {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.grupo-muscular {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 9px;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.grupo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+
+.triangulo {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.grupo-titulo .triangulo.rotado {
+    transform: rotate(180deg);
+}
+
+.lista-ejercicios {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: #D3D3D3;
+    border-radius: 9px;
+    margin-top: 0.5rem;
+}
+
+.lista-ejercicios.desplegado {
+    max-height: 500px; /* Ajusta según sea necesario */
+}
+
+.ejercicio-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.nombre-ejercicio {
+    font-size: 1.45rem;
+    border: none;
+    background: none;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
