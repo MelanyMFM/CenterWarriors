@@ -24,7 +24,7 @@ const SendFeedback = () => {
   };
 
   return (
-    <div className="form-retroalimentacion">
+    <div className="form-retroalimentacion" id="form-retroalimentacion">
       <p className="form-retroalimentacion-titulo">¿Tienes sugerencias para ayudarnos a mejorar?</p>
       <p className="form-retroalimentacion-subtitulo">No dudes en llenar este buzón de sugerencias </p>
 

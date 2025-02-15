@@ -27,6 +27,21 @@ function Menu() {
     }, 100); // Un pequeño retraso para asegurar que la navegación haya terminado
   };
 
+  const handleSugerenciaClick = (e) => {
+    e.preventDefault(); // Evita la navegación predeterminada
+    setIsOpen(false); // Cierra el menú
+    if (location.pathname !== '/') {
+      navigate('/'); // Navega a la ruta principal
+    }
+    // Espera a que la navegación se complete antes de hacer el scroll
+    setTimeout(() => {
+      const sugerenciaSection = document.getElementById("form-retroalimentacion");
+      if (sugerenciaSection) {
+        sugerenciaSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Un pequeño retraso para asegurar que la navegación haya terminado
+  };
+
   return (
     <div className='todo'>
       <button onClick={toggleMenu} className="menu-icon">
@@ -38,7 +53,7 @@ function Menu() {
             <Link to={"/"} className='listaMenu' onClick={() => setIsOpen(false)}>Inicio</Link>
             <li className='listaMenu' onClick={() => setIsOpen(false)}>Catálogo de ejercicios</li>
             <Link to={"/"} className='listaMenu' onClick={handleContactoClick}>Contacto</Link>
-            <li className='listaMenu' onClick={() => setIsOpen(false)}>Sugerencias</li>
+            <Link to={"/"} className='listaMenu' onClick={handleSugerenciaClick}>Sugerencias</Link>
           </div>
         </div>
       )}
