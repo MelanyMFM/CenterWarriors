@@ -1,0 +1,83 @@
+.buzon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .buzon-cerrado {
+        cursor: pointer;
+        text-align: center;
+        padding: 2rem;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .buzon-cerrado span {
+        font-size: 4rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .buzon-abierto {
+        width: 100%;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        position: relative;
+
+        .btn-cerrar {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .cargando {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .cargando span {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    
+    
+
+}
+
+
+
+
+.retroalimentaciones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.retroalimentaciones li {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.retroalimentaciones small {
+    font-size: 0.9rem;
+    color: #777;
+}
