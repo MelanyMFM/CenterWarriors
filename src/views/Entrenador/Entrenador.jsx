@@ -23,7 +23,7 @@ function Entrenador() {
     
 
     return (
-        <div className="vista" style={{ paddingTop: "1rem", backgroundColor: "#000", maxHeight: "100%", paddingBottom: "33.75rem" }}>
+        <div className="vista" style={{ paddingTop: "1rem", backgroundColor: "#000", maxHeight: "100%"}}>
             <Menu />
             <div className="entrenadore">
                 <div className="headere">

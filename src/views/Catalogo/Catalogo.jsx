@@ -1,8 +1,6 @@
-// src/componentes/Catalogo/Catalogo.jsx
-import React from 'react';
 import ejercicios from '../../assets/ejercicios.js'; // Importa la lista de ejercicios
 import GrupoMuscular from "../../componentes/GrupoMuscular/GrupoMuscular.jsx"; // Importa el componente GrupoMuscular
-import "./Catalogo.css";
+import "./catalogo.css";
 import Menu from "../../componentes/Menu/Menu.jsx";
 import logo from "../../assets/logo.png";
 
@@ -23,7 +21,7 @@ function Catalogo() {
             <div className="catalogo vista">
                 <img src={logo} alt="logo" className='logoHead' />
                 <div className='catalogo-contenido'>
-                    <h2 className='texto-titulo'>Catálogo de Ejercicios</h2>
+                    <p className='texto-titulo-cat'>Catálogo de Ejercicios</p>
                     {Object.keys(gruposMusculares).map((grupo) => (
                         <GrupoMuscular
                             key={grupo}

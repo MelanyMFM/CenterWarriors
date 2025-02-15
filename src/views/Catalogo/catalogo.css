@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap');
+
+.catalogo{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    font-family: 'Inter', sans-serif;
+    padding-top: 1rem;
+
+    .logoHead{
+        width: 5rem;
+    }
+
+    .catalogo-contenido{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap:1.3rem;
+
+        .texto-titulo-cat{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+        
+        .grupo-muscular{
+            
+            .grupo-titulo{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 9px;
+                padding: .5rem;
+                width: 100%;
+
+                transition: background-color 0.3s ease;
+
+                .nombre-grupo{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+
+                .triangulo{
+                    font-size: 1rem;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            .lista-ejercicios{
+                transition: max-height 0.5s ease;
+            }
+        }
+    }
+}

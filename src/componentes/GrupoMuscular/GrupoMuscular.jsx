@@ -1,4 +1,3 @@
-// src/componentes/Catalogo/GrupoMuscular.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,9 +11,9 @@ function GrupoMuscular({ grupo, ejercicios }) {
 
     return (
         <div className="grupo-muscular">
-            <h3 onClick={toggleDesplegado} className="grupo-titulo">
-                {grupo} {desplegado ? '▲' : '▼'}
-            </h3>
+            <button onClick={toggleDesplegado} className="grupo-titulo">
+                <span className='nombre-grupo'>{grupo}</span> <span className='triangulo'>{desplegado ? '▲' : '▼'}</span>
+            </button>
             {desplegado && (
                 <ul className="lista-ejercicios">
                     {ejercicios.map((ejercicio) => (
