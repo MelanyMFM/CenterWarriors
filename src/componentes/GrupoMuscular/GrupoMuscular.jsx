@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function GrupoMuscular({ grupo, ejercicios }) {
     const [desplegado, setDesplegado] = useState(false); // Estado para desplegar/ocultar
@@ -15,21 +16,32 @@ function GrupoMuscular({ grupo, ejercicios }) {
                 <span className='nombre-grupo'>{grupo}</span> <span className='triangulo'>{desplegado ? '▲' : '▼'}</span>
             </button>
             {desplegado && (
-                <ul className="lista-ejercicios">
+                <div className="lista-ejercicios">
                     {ejercicios.map((ejercicio) => (
-                        <li key={ejercicio.id} className="ejercicio-item">
-                            <span
+                        <div key={ejercicio.id} className="ejercicio-item">
+                            <button
                                 className="nombre-ejercicio"
                                 onClick={() => navigate(`/usuario/ejercicio/${ejercicio.id}`)}
                             >
                                 {ejercicio.nombre}
-                            </span>
-                        </li>
+                            </button>
+                        </div>
                     ))}
-                </ul>
+                </div>
             )}
         </div>
     );
 }
+
+
+GrupoMuscular.propTypes = {
+    grupo: PropTypes.string.isRequired,
+    ejercicios: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            nombre: PropTypes.string.isRequired,
+        })
+    ).isRequired,
+};
 
 export default GrupoMuscular;

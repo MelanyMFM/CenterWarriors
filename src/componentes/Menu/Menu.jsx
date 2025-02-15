@@ -42,6 +42,7 @@ function Menu() {
     }, 100); // Un pequeño retraso para asegurar que la navegación haya terminado
   };
 
+
   return (
     <div className='todo'>
       <button onClick={toggleMenu} className="menu-icon">
@@ -51,7 +52,7 @@ function Menu() {
         <div className="menu-content">
           <div className='listas'>
             <Link to={"/"} className='listaMenu' onClick={() => setIsOpen(false)}>Inicio</Link>
-            <li className='listaMenu' onClick={() => setIsOpen(false)}>Catálogo de ejercicios</li>
+            <Link to={"/catalogo"} className='listaMenu' onClick={() => setIsOpen(false)}>Catálogo de ejercicios</Link>
             <Link to={"/"} className='listaMenu' onClick={handleContactoClick}>Contacto</Link>
             <Link to={"/"} className='listaMenu' onClick={handleSugerenciaClick}>Sugerencias</Link>
           </div>
