@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react"; // Importa useEffect
 import { useNavigate } from "react-router-dom";
 import FetchFeedback from "../../componentes/FetchFeedback/FetchFeedback";
 import "./vistaEntre.css";
+import Menu from "../../componentes/Menu/Menu";
 
 function VistaEntre() {
     const navigate = useNavigate();
@@ -14,9 +15,13 @@ function VistaEntre() {
     }, [navigate]);
 
     return (
-        <div className="temporal">
-            <FetchFeedback/>
-        </div>
+        <>
+            <Menu/>
+            <div className="vista-entre">
+                <p className="entre-titulo">Buzón de Sugerencias</p>
+                <FetchFeedback />
+            </div>
+       </> 
     );
 }
 

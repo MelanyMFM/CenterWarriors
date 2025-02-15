@@ -6,6 +6,7 @@ import Contacto from './componentes/Contacto/Contacto';
 import VistaEntre from './views/VistaEntre/VistaEntre';
 import RutinaDetalle from './componentes/RutinaDetalle/RutinaDetalle'; // Importa el nuevo componente
 import EjercicioDetalle from "./componentes/EjercicioDetalle/EjercicioDetalle";
+import Catalogo from "./views/Catalogo/Catalogo";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/entrenador" element={<Entrenador />} />
                 <Route path="/homeEntrenador" element={<VistaEntre />} />
                 <Route path="/contacto" element={<Contacto />} />
+                <Route path="/catalogo" element={<Catalogo/>} />
 
                 <Route path="/usuario/ejercicio/:id" element={<EjercicioDetalle />} />
             </Routes>
