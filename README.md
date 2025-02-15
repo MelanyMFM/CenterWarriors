@@ -6,7 +6,7 @@ Este proyecto es una aplicación web para la gestión de rutinas de entrenamient
 ## Tecnologías Utilizadas
 
 - **Frontend:** React
-- **Backend:** Firebase (Firestore para la base de datos)
+- **Backend:** Firebase
 - **Hosting:** Vercel
 ## Características
 ### Para Entrenadores
