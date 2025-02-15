@@ -26,26 +26,19 @@ const SendFeedback = () => {
   return (
     <div className="form-retroalimentacion">
       <p className="form-retroalimentacion-titulo">¿Tienes sugerencias para ayudarnos a mejorar?</p>
-      <p className="form-retroalimentacion-subtitulo">No dudes en llenar este buzón de sugerencias</p>
+      <p className="form-retroalimentacion-subtitulo">No dudes en llenar este buzón de sugerencias </p>
 
-    <form onSubmit={handleSubmit}>
+    <form className="formulario" onSubmit={handleSubmit} >
       <textarea
         value={feedback}
         onChange={(e) => setFeedback(e.target.value)}
         placeholder="Escribe tu retroalimentación aquí..."
         required
-      />
-      <button type="submit">Enviar</button>
-    </form>
-
-    <form className="formulario">
-      <textarea
-        placeholder="Escribe tu retroalimentación aquí..."
-        required
         className="area-texto"
       />
-      <button >Enviar</button>
+      <button type="submit" className="boton-sugerencia">Enviar</button>
     </form>
+
 </div>
 
   );
