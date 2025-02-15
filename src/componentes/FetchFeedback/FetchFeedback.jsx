@@ -44,8 +44,8 @@ const FetchFeedback = () => {
         <div className="buzon-container">
             {!isOpen ? (
                 <button className="buzon-cerrado" onClick={handleBuzonClick}>
-                    <span role="img" aria-label="buzón">📪</span>
-                    <p>Haz clic para ver las sugerencias</p>
+                    <span>📪</span>
+                    <p className="cerrado-titulo">Haz clic para ver las sugerencias</p>
                 </button>
             ) : (
                 <div className="buzon-abierto">
@@ -55,15 +55,15 @@ const FetchFeedback = () => {
                     {loading ? (
                         <div className="cargando">
                             <span role="img" aria-label="cargando">⏳</span>
-                            <p>Cargando retroalimentaciones...</p>
+                            <p className="cerrado-titulo">Cargando retroalimentaciones...</p>
                         </div>
                     ) : (
                         <div className="retroalimentaciones">
-                            <h2>Retroalimentaciones</h2>
+                            <p className="retroalimentaciones-title">Retroalimentaciones</p>
                             <ul>
                                 {feedbacks.map((feedback) => (
                                     <li key={feedback.id}>
-                                        <p>{feedback.message || "Mensaje no disponible"}</p>
+                                        <p className="retro-text">{feedback.message || "Mensaje no disponible"}</p>
                                         <small>
                                             {feedback.timestamp
                                                 ? new Date(feedback.timestamp.toDate()).toLocaleString()

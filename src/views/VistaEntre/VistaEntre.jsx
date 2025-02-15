@@ -18,7 +18,7 @@ function VistaEntre() {
         <>
             <Menu/>
             <div className="vista-entre">
-                <p>Buzón de Sugerencias</p>
+                <p className="entre-titulo">Buzón de Sugerencias</p>
                 <FetchFeedback />
             </div>
        </> 

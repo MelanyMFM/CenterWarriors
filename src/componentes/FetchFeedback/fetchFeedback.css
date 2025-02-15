@@ -1,68 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap');
+
 .buzon-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 600px;
     margin: 0 auto;
-
-    .buzon-cerrado {
-        cursor: pointer;
-        text-align: center;
-        padding: 2rem;
-        background-color: #fff;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .buzon-cerrado span {
-        font-size: 4rem;
-        display: block;
-        margin-bottom: 1rem;
-    }
-
-    .buzon-abierto {
-        width: 100%;
-        background-color: #fff;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        position: relative;
-
-        .btn-cerrar {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: #555;
-        }
-
-        .cargando {
-            text-align: center;
-            font-size: 1.5rem;
-            color: #555;
-        }
-
-        .cargando span {
-            font-size: 3rem;
-            display: block;
-            margin-bottom: 1rem;
-        }
-
-    }
-
-    
-    
+    font-family: 'Inter',sans-serif;
 
 }
 
+.buzon-cerrado {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2c2c2c; /* Fondo oscuro */
+    border: 2px solid #444; /* Borde más oscuro */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff; /* Texto blanco */
+}
 
+
+.buzon-cerrado span {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.cerrado-titulo{
+    font-size: 1.3rem;
+    color: #b9b9b9;
+}
+
+.buzon-abierto {
+    width: 80%;
+    background-color: #2c2c2c; /* Fondo oscuro */
+    border: 2px solid #444; /* Borde más oscuro */
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    color: #fff; /* Texto blanco */
+}
+
+.retroalimentaciones-title{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff; /* Ícono blanco */
+    transition: color 0.3s ease;
+}
+
+.cargando {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff; /* Texto blanco */
+}
+
+.cargando span {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
 
 
 .retroalimentaciones ul {
@@ -71,13 +78,18 @@
 }
 
 .retroalimentaciones li {
-    background-color: #f1f1f1;
+    background-color: #444; /* Fondo oscuro para los elementos */
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: #fff; /* Texto blanco */
 }
 
-
 .retroalimentaciones small {
-    font-size: 0.9rem;
-    color: #777;
+    font-size: 0.75rem;
+    color: #ccc; /* Texto gris claro */
+}
+
+.retro-text{
+    font-size: 1rem;
 }
