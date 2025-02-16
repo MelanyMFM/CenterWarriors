@@ -21,7 +21,7 @@ function GrupoMuscular({ grupo, ejercicios }) {
             </button>
             <div className={`lista-ejercicios ${desplegado ? 'desplegado' : ''}`}>
                 {ejercicios.map((ejercicio) => (
-                    <div key={ejercicio.id} className="ejercicio-item">
+                    <div key={ejercicio.id} className="ejercicio-item2">
                         <button
                             className="nombre-ejercicio"
                             onClick={() => navigate(`/usuario/ejercicio/${ejercicio.id}`)}

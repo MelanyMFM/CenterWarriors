@@ -4,6 +4,7 @@
     background-color: #000;
     padding-top: 1rem;
     margin: 0 auto;
+    min-height: 100vh;
 
     .home{
         display: flex;
@@ -47,3 +48,11 @@
 
 
 }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    
+  }
+  

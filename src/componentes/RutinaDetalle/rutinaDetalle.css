@@ -82,7 +82,7 @@
     height: 20px;
     border-radius: 50%;
     border: 2px solid #000;
-    cursor: pointer;
+    object-fit: cover;
 }
 
 .checkbox-circle.checked {
@@ -104,5 +104,5 @@
 }
 
 .reps{
-    font-size: 1.1rem;
+    font-size: .8rem;
 }
