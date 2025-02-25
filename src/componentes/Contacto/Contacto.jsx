@@ -24,7 +24,7 @@ function Contacto() {
                 </p>
                 <p className='info'>
                     <FaPhone className="icon" /> {/* Icono de teléfono */}
-                    <a href="tel:+57380652059">+57 380 652 059 (ni se de quien es xd)</a>
+                    <a href="tel:+57380652059">+57 380 652 059</a>
                 </p>
             </div>
 
