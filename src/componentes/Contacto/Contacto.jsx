@@ -20,11 +20,11 @@ function Contacto() {
                 </p>
                 <p className='info'>
                     <FaEnvelope className="icon" /> {/* Icono de correo */}
-                    <a href="mailto:mefrancom@unal.edu.co">mefrancom@unal.co</a>
+                    <a href="mailto:centerw@gmail.com">centerw@gmail.com</a>
                 </p>
                 <p className='info'>
                     <FaPhone className="icon" /> {/* Icono de teléfono */}
-                    <a href="tel:+57380652059">+57 380 652 059</a>
+                    <a href="tel:+573117279642">+57 3117279642</a>
                 </p>
             </div>
 
